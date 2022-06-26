@@ -1,16 +1,18 @@
-# portofolio_flutter
+# Portofolio Flutter
 
-A new Flutter project.
+Ini proyek flutter untuk submisi dicoding :
+<ul>
+    <li><strong>Dokumentasi yang dipakai :</strong> https://pub.dev/</li>
+</ul>
 
-## Getting Started
+Lalu saya juga mencoba flutter web : https://docs.flutter.dev/get-started/web
+<br>
+Dan mencoba mendeploy dengan netlify dengan cara sebagai berikut :
 
-This project is a starting point for a Flutter application.
+<ul>
+    <li><strong>Build command :</strong> if cd flutter; then git pull && cd ..; else git clone https://github.com/flutter/flutter.git; fi && flutter/bin/flutter config --enable-web && flutter/bin/flutter build web --release</li>
+    <li><strong>Publish directory:</strong> build/web</li>
+    <li><strong>Deploy :</strong> https://ikhwan-flutter-pemula.netlify.app/</li>
+</ul>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Keep Learning :)

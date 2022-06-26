@@ -5,7 +5,7 @@ import 'package:portofolio_flutter/pages/projects.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: 'about',
+    initialRoute: 'home',
     debugShowCheckedModeBanner: false,
     routes: {
       'home' : (context) => MyHome(),
