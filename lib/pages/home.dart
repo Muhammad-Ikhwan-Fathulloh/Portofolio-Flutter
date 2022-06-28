@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sliding_sheet/sliding_sheet.dart';
+import 'package:styled_widget/styled_widget.dart';
 
 class MyHome extends StatefulWidget {
   const MyHome({ Key? key }) : super(key: key);
@@ -9,7 +10,47 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
-
+  myDecorCard(icon, tech){
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white,
+      ),
+      child: Align(
+        alignment: Alignment.center,
+        child: Card(
+          elevation: 10,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                color: Color(0xffE8F2F7),
+                shape: BoxShape.circle,
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(15),
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Color(0xff7AC1E7),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      icon,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
   myAchiev(num, type){
     return Row(
       children: [
@@ -202,9 +243,12 @@ class _MyHomeState extends State<MyHome> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          mySpec(Icons.web, 'Website'),
-                          mySpec(Icons.android, 'Android'),
-                          mySpec(Icons.electrical_services_outlined, 'IoT'),
+                          // mySpec(Icons.web, 'Website'),
+                          // mySpec(Icons.android, 'Android'),
+                          // mySpec(Icons.electrical_services_outlined, 'IoT'),
+                          myDecorCard(Icons.web, 'Website'),
+                          myDecorCard(Icons.android, 'Android'),
+                          myDecorCard(Icons.electrical_services_outlined, 'IoT'),
                         ],
                       ),              
                     ]
